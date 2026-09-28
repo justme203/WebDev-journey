@@ -8,8 +8,11 @@
     --body-font: 'Arial', "Helvetica", sans-serif;   
 }
 header {
-    
-    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    align-items: center;
+
+    background-color: var(--accent2-color);
 }
 * { 
     margin: 0;
@@ -59,3 +62,41 @@ nav,p,section,article{
     float: left;
     width: 120px;
  }
+ nav{
+    display: flex;
+    justify-content: space-around;
+ }
+ nav a {
+    text-decoration: none;
+    color: black
+ }
+ .history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 15px;
+    align-items: center;
+ }
+ .adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+ }
+ .adventure-gallery img {
+    width: 120px;
+    height: 90px;
+ }
+ footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socialmedia {
+  display: flex;
+  gap: 10px;
+}
+.socialmedia a {
+  text-decoration: none;
+}
+.socialmedia img {
+    width:16;
+    height: 16;
+}
