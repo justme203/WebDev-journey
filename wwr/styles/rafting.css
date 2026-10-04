@@ -1,3 +1,10 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 :root
 {
     --primary-color: #055a05;
@@ -7,96 +14,162 @@
     --heading-font: 'times new roman', "Georgia", serif;
     --body-font: 'Arial', "Helvetica", sans-serif;   
 }
-header {
-    display: grid;
-    grid-template-columns: 120px 1fr 120px;
-    align-items: center;
-
-    background-color: var(--accent2-color);
-}
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color) 
-
+    font-family: var(--heading-font);
+   font-weight: 800;
 }
-header,main,footer {
+header {
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    background-color: var(--primary-color);
+    height: 100px;
     width: 840px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
-h1,h2{
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+
+nav {
+    display: flex;
+    border: 1px solid black;
+    margin: 30px 0 30px auto;
+    
 }
-nav,p,section,article{
-    margin: 16px;
-    padding: 16px;
+
+nav ul {
+    list-style-type: none;
+    display: flex;
 }
-.socialmedia a {
+
+nav li {
+    border-right: 1px solid black;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 20px;
     text-decoration: none;
 }
+
 .hero{
     position: relative;
+      width: 840px;
+    max-width: 1024px;
+    margin: 20px auto;
+     border: 3px solid black;
 }
- .hero img{
+ .hero > img{
     display: block;
     width: 100%;
     height: auto;
  }
- h1 {
+ .hero h1 {
     position: absolute;
-    top:20px;
-    width:100% ;
-    padding: 16px;
+     top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: black;
+    font-family: var(--heading-font);
+    opacity: 0.9;
 }
- .hero article img {
-    float: left;
-    width: 120px;
- }
- nav{
-    display: flex;
-    justify-content: space-around;
- }
- nav a {
-    text-decoration: none;
-    color: black
- }
- .history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 15px;
-    align-items: center;
- }
- .adventure-gallery {
-    display: flex;
-    justify-content: space-between;
- }
- .adventure-gallery img {
-    width: 120px;
-    height: 90px;
- }
+.hero article{
+        position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    min-height: 100px;
+    padding: 15px;
+    background-color: var(--accent1-color);
+    color: white;
+    border: 1px solid black;
+}
+.hero article img {
+    float: right;
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+}
+.hero article p {
+    line-height: 1.5;
+}
+.hero article h3 {
+    position: static;
+    width: auto;
+    padding: 0;
+    margin-bottom: 10px;
+
+    background-color: transparent;
+    color: white;
+    opacity: 1;
+}
  footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 3px solid black;
+  margin: 20px auto;
+  width: 840px;
+  background-color: rgb(184, 184, 238)
 }
 .socialmedia {
   display: flex;
   gap: 10px;
+  border: none;
 }
 .socialmedia a {
   text-decoration: none;
+   border: none;
 }
 .socialmedia img {
     width:16;
     height: 16;
+     border: none;
+}
+.history {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+     width: 840px;
+    box-sizing: border-box;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+}
+ .adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+width: 840px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+.adventure-gallery img {
+    width: 120px;
+    height: auto;
+    
+    padding: 0;
+    margin: 12px;
 }
