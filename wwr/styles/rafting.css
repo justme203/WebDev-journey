@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+     
 }
 
 :root
@@ -18,15 +18,20 @@ body {
     font-family: var(--heading-font);
    font-weight: 800;
 }
+
+
+
 header {
     display: flex;
     align-items: center;
-    border: 3px solid black;
-    background-color: var(--primary-color);
-    height: 100px;
+    border: 1px solid black;
+    background-color: rgb(184, 184, 238);
+    height: auto;
     width: 840px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: auto;
+    padding: 5px;
+   
 }
 
 nav {
@@ -57,42 +62,43 @@ nav a {
     position: relative;
       width: 840px;
     max-width: 1024px;
-    margin: 20px auto;
-     border: 3px solid black;
+    margin: 10px auto;
+     border: 1px solid black;
 }
  .hero > img{
     display: block;
-    width: 100%;
+    width: 840px;
     height: auto;
  }
  .hero h1 {
     position: absolute;
      top: 20px;
     left: 0;
-    width: 100%;
-    padding: 10px;
+    width:100%;
+    padding: 5px;
     text-align: center;
-    background-color: var(--secondary-color);
-    color: black;
+    background-color: var(--accent1-color);
+    color: white;
     font-family: var(--heading-font);
     opacity: 0.9;
 }
 .hero article{
         position: absolute;
     bottom: 20px;
-    left: 10%;
-    width: 80%;
+    left: 40%;
+    width: 500px;
     min-height: 100px;
-    padding: 15px;
+    padding: 0px;
     background-color: var(--accent1-color);
     color: white;
-    border: 1px solid black;
+    border: 1px solid RED;
 }
 .hero article img {
     float: right;
     width: 100px;
     height: auto;
     margin-left: 15px;
+    
 }
 .hero article p {
     line-height: 1.5;
@@ -101,9 +107,7 @@ nav a {
     position: static;
     width: auto;
     padding: 0;
-    margin-bottom: 10px;
-
-    background-color: transparent;
+    margin-bottom: auto;
     color: white;
     opacity: 1;
 }
@@ -111,36 +115,41 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 3px solid black;
-  margin: 20px auto;
+  border: 1px solid black;
+  margin: 10px auto;
   width: 840px;
   background-color: rgb(184, 184, 238)
+  
 }
 .socialmedia {
   display: flex;
-  gap: 10px;
+  gap: 1px;
   border: none;
+  padding: 0;
 }
 .socialmedia a {
   text-decoration: none;
    border: none;
+   gap: 1px;
+   padding: 2px;
 }
 .socialmedia img {
     width:16;
     height: 16;
+    gap: 1pxs;
      border: none;
 }
 .history {
     border: 1px solid black;
-    padding: 20px;
-    margin: 20px auto;
+    padding:10px;
+    margin: 10px auto;
      width: 840px;
     box-sizing: border-box;
 }
 
 .history h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: auto;
 }
 
 .history-content {
@@ -153,23 +162,38 @@ nav a {
 }
 
 .history-content img {
-    width: 100%;
+    width: 200px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
- .adventure-gallery {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-width: 840px;
-    padding: 20px;
-    margin: 20px auto;
-    border: 2px solid black;
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: 100PX 100px  100PX 100px 100PX;
+    gap: 70px;
+    width: 840px;
+    padding: 0.5px;
+    margin: 10px auto;
+    border: 1px solid black;
+     
+}
+
+.adventure-gallery h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+   margin-bottom: auto;
+}
+.adventure-gallery figure {
+    text-align: center;
 }
 
 .adventure-gallery img {
     width: 120px;
     height: auto;
-    
-    padding: 0;
-    margin: 12px;
+    margin: 0 auto;
 }
+
+.adventure-gallery figcaption {
+    margin-top: auto;
+}
+   
